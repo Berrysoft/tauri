@@ -158,9 +158,9 @@ dependencies = [
 
 [[package]]
 name = "attohttpc"
-version = "0.20.0"
+version = "0.22.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ca359af0239b00307656f0d6520fab5997a068cdfcfdb424e5466a3ea7958c5"
+checksum = "1fcf00bc6d5abb29b5f97e3c61a90b6d3caa12f3faf897d4a3e3607c050a35a7"
 dependencies = [
  "flate2",
  "http",
@@ -168,12 +168,10 @@ dependencies = [
  "mime",
  "multipart",
  "native-tls",
- "openssl",
  "serde",
  "serde_json",
  "serde_urlencoded",
  "url",
- "wildmatch",
 ]
 
 [[package]]
@@ -252,9 +250,9 @@ dependencies = [
 
 [[package]]
 name = "bumpalo"
-version = "3.10.0"
+version = "3.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "37ccbd214614c6783386c1af30caf03192f17891059cecc394b4fb119e363de3"
+checksum = "0d261e256854913907f67ed06efbc3338dfe6179796deefc1ff763fc1aee5535"
 
 [[package]]
 name = "bytemuck"
@@ -1477,9 +1475,9 @@ dependencies = [
 
 [[package]]
 name = "infer"
-version = "0.8.1"
+version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e035cede526e0b21d5adffc9fa0eb4ef5d6026fe9c5b0bfe8084b9472b587a55"
+checksum = "f178e61cdbfe084aa75a2f4f7a25a5bb09701a47ae1753608f194b15783c937a"
 dependencies = [
  "cfb 0.7.3",
 ]
@@ -3169,7 +3167,7 @@ dependencies = [
  "http",
  "ico",
  "ignore",
- "infer 0.8.1",
+ "infer 0.9.0",
  "minisign-verify",
  "notify-rust",
  "objc",
@@ -3203,7 +3201,7 @@ dependencies = [
  "url",
  "uuid 1.1.2",
  "webkit2gtk",
- "webview2-com 0.16.0",
+ "webview2-com",
  "win7-notifications",
  "windows 0.39.0",
  "zip",
@@ -3276,7 +3274,7 @@ dependencies = [
  "tauri-utils",
  "thiserror",
  "uuid 1.1.2",
- "webview2-com 0.19.1",
+ "webview2-com",
  "windows 0.39.0",
 ]
 
@@ -3293,7 +3291,7 @@ dependencies = [
  "tauri-utils",
  "uuid 1.1.2",
  "webkit2gtk",
- "webview2-com 0.19.1",
+ "webview2-com",
  "windows 0.39.0",
  "wry",
 ]
@@ -3641,13 +3639,12 @@ dependencies = [
 
 [[package]]
 name = "url"
-version = "2.2.2"
+version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a507c383b2d33b5fc35d1861e77e6b383d158b2da5e14fe51b83dfedf6fd578c"
+checksum = "22fe195a4f217c25b25cb5058ced57059824a678474874038dc88d211bf508d3"
 dependencies = [
  "form_urlencoded",
  "idna",
- "matches",
  "percent-encoding",
  "serde",
 ]
@@ -3867,24 +3864,12 @@ dependencies = [
 
 [[package]]
 name = "webview2-com"
-version = "0.16.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a489a9420acabb3c2ed0434b6f71f6b56b9485ec32665a28dec1ee186d716e0f"
-dependencies = [
- "webview2-com-macros",
- "webview2-com-sys 0.16.0",
- "windows 0.37.0",
- "windows-implement 0.37.0",
-]
-
-[[package]]
-name = "webview2-com"
 version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b4a769c9f1a64a8734bde70caafac2b96cada12cd4aefa49196b3a386b8b4178"
 dependencies = [
  "webview2-com-macros",
- "webview2-com-sys 0.19.0",
+ "webview2-com-sys",
  "windows 0.39.0",
  "windows-implement 0.39.0",
 ]
@@ -3902,20 +3887,6 @@ dependencies = [
 
 [[package]]
 name = "webview2-com-sys"
-version = "0.16.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0258c53ee9adc0a4f8ba1c8c317588f7a58c7048a55b621d469ba75ab3709ca1"
-dependencies = [
- "regex",
- "serde",
- "serde_json",
- "thiserror",
- "windows 0.37.0",
- "windows-bindgen 0.37.0",
-]
-
-[[package]]
-name = "webview2-com-sys"
 version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "aac48ef20ddf657755fdcda8dfed2a7b4fc7e4581acce6fe9b88c3d64f29dee7"
@@ -3925,15 +3896,9 @@ dependencies = [
  "serde_json",
  "thiserror",
  "windows 0.39.0",
- "windows-bindgen 0.39.0",
- "windows-metadata 0.39.0",
+ "windows-bindgen",
+ "windows-metadata",
 ]
-
-[[package]]
-name = "wildmatch"
-version = "2.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee583bdc5ff1cf9db20e9db5bb3ff4c3089a8f6b8b31aff265c9aba85812db86"
 
 [[package]]
 name = "win7-notifications"
@@ -4055,21 +4020,11 @@ dependencies = [
 
 [[package]]
 name = "windows-bindgen"
-version = "0.37.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0bed7be31ade0af08fec9b5343e9edcc005d22b1f11859b8a59b24797f5858e8"
-dependencies = [
- "windows-metadata 0.37.0",
- "windows-tokens 0.37.0",
-]
-
-[[package]]
-name = "windows-bindgen"
 version = "0.39.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "68003dbd0e38abc0fb85b939240f4bce37c43a5981d3df37ccbaaa981b47cb41"
 dependencies = [
- "windows-metadata 0.39.0",
+ "windows-metadata",
  "windows-tokens 0.39.0",
 ]
 
@@ -4092,12 +4047,6 @@ dependencies = [
  "syn",
  "windows-tokens 0.39.0",
 ]
-
-[[package]]
-name = "windows-metadata"
-version = "0.37.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4f33f2b90a6664e369c41ab5ff262d06f048fc9685d9bf8a0e99a47750bb0463"
 
 [[package]]
 name = "windows-metadata"
@@ -4333,7 +4282,7 @@ dependencies = [
  "url",
  "webkit2gtk",
  "webkit2gtk-sys",
- "webview2-com 0.19.1",
+ "webview2-com",
  "windows 0.39.0",
  "windows-implement 0.39.0",
 ]
